@@ -1,7 +1,15 @@
 import cv2
+import pyautogui
+import numpy
 
-image = cv2.imread("blue.png")
+cursorpos = pyautogui.position()
 
 while True == True:
-    cv2.imshow("Say it Ain't So", image,)
-    if cv2.waitKey(1) & 0xFF == ord('q'): break
+    im = numpy.array(pyautogui.screenshot(region=((cursorpos) + (250, 250))))
+
+    cursorpos = pyautogui.position()
+
+    cv2.imshow("where ur cursor is", im)
+
+    if cv2.waitKey(1) & 0xFF == ord('q'):
+        break
