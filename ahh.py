@@ -5,11 +5,11 @@ import numpy
 cursorpos = pyautogui.position()
 
 while True == True:
-    im = numpy.array(pyautogui.screenshot(region=((cursorpos) + (250, 250))))
+    im = numpy.array(pyautogui.screenshot(region=((cursorpos) + (300, 300))))
 
     cursorpos = pyautogui.position()
 
-    cv2.imshow("where ur cursor is", im)
+    cv2.imshow("cursor", im)
 
     if cv2.waitKey(1) & 0xFF == ord('q'):
         break
