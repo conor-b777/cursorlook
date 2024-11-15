@@ -10,7 +10,7 @@ nposx = cursorpos.x - halfx
 nposy = cursorpos.y - halfy
 
 while True == True:
-    im = numpy.array(pyautogui.screenshot(region=((nposx, nposy) + (500, 500))))
+    im = numpy.array(pyautogui.screenshot(region=((nposx, nposy) + (450, 450))))
 
     cursorpos = pyautogui.position()
     halfx = cursorpos.x%2
