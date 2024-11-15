@@ -19,7 +19,7 @@ while True == True:
     nposx = cursorpos.x - halfx
     nposy = cursorpos.y - halfy
 
-    cv2.imshow("cursor", im)
+    cv2.imshow("Press Q to kill window", im)
 
     if cv2.waitKey(1) & 0xFF == ord('q'):
         break
