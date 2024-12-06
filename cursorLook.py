@@ -6,10 +6,10 @@ wwidth = 450
 wheight = 450
 cursorpos = pyautogui.position()
 
-nposx = cursorpos.x - 225
-nposy = cursorpos.y - 225
+nposx = cursorpos.x - wwidth/2
+nposy = cursorpos.y - wheight/2
 
-while True == True:
+while True:
     im = numpy.array(pyautogui.screenshot(region=((nposx, nposy) + (wwidth, wheight))))
 
     cursorpos = pyautogui.position()
