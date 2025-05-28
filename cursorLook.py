@@ -2,8 +2,8 @@ import cv2
 import pyautogui
 import numpy
 
-wwidth = 450
-wheight = 450
+wwidth = 475
+wheight = 475
 cursorpos = pyautogui.position()
 
 nposx = cursorpos.x - wwidth/2
